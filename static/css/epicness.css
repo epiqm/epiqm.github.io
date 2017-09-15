@@ -133,11 +133,14 @@ strong {
 .itlc {
 	font-style: italic;
 }
-a:link, a:visited {
+a:link {
     color: #61cdf5;
 }
+a:visited {
+	color: #8E41BB;
+}
 a:hover, a:active {
-	color: #ff1a5b;
+	color: #D26B9E;
 }
 
 .wrap {
@@ -236,10 +239,10 @@ header div.heading h1 {
 }
 .section .side h2 {
 	font-size: 1.15em;
-	width: 90px;
+	width: 100px;
 	font-weight: bolder;
 	text-transform: uppercase;
-	color: #B954B6;
+	color: #434343;
 	text-align: right;
 	overflow: hidden;
 	font-family: 'Roboto', sans-serif;
@@ -252,15 +255,83 @@ header div.heading h1 {
 	box-sizing: border-box;
 	font-family: 'Quicksand', sans-serif;
 	font-weight: lighter;
+	margin: 0 0 30px 0;
+}
+.section .trght {
+	text-align: right;
 }
 .section .topic p {
 	padding-bottom: 10px;
 	line-height: 1.4em;
 	text-align: justify;
 }
+.section .topic h3 {
+	color: #A047BC;
+	text-transform: uppercase;
+	font-weight: lighter;
+	font-family: 'Roboto', sans-serif;
+	margin-bottom: 20px;
+}
 .lnth {
 	text-decoration: line-through;
 	color: #bebebe;
+}
+
+.app {
+
+}
+.app-icon {
+	width: 62px;
+	height: 62px;
+	float: left;
+	margin-right: 10px;
+}
+.app-icon img {
+	border-radius: 4px;
+}
+.app-icon_supaplex {
+	background: url(/static/img/supaplex.gif);
+	width: 62px;
+	height: 62px;
+	border-radius: 4px;
+}
+.app-title {
+	margin-bottom: 6px;
+	line-height: 18px;
+}
+
+.trght {
+	overflow: hidden;
+	padding: 0;
+	margin: 0 0 20px 0;
+}
+.trght .card {
+	width: 245px;
+	float: left;
+	border: 1px solid #232323;
+	overflow: hidden;
+	border-radius: 6px;
+	text-align: left;
+	padding: 5px 10px;
+	box-sizing: border-box;
+	height: 220px;
+}
+.trght .card:first-child {
+	margin-right: 15px;
+}
+.trght .card:nth-child(2) {
+	margin-right: 0;
+}
+.trght .card .card-description p:first-child {
+	margin-bottom: 2px;
+	padding-bottom: 2px;
+}
+.trght .card .card-description > div {
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+}
+.trght .card .card-description p:nth-child(3) {
+	height: 100px;
 }
 
 footer:before {
@@ -276,19 +347,23 @@ footer:before {
 footer {
 	max-width: 820px;
 	background-color: #fff;
-	margin: 0 auto;
+	margin: 0 auto 40px auto;
 	clear: both;
 	overflow: hidden;
-	padding: 10px 20px 35px 20px;
+	padding: 10px 0px 35px 0px;
 	font-size: .9em;
 	background-image: none;
 	font-family: 'Quicksand', sans-serif;
 	font-weight: lighter;
 }
+footer h2 {
+	display: none;
+}
 footer .fl {
 	float: left;
 	max-width: 300px;
 	color: #999;
+	padding-left: 10px;
 }
 footer .fl img {
 	position: relative;
@@ -303,6 +378,7 @@ footer .fr {
 	float: right;
 	max-width: 300px;
 	color: #999;
+	padding-right: 10px;
 }
 
 #socialWrap {
@@ -326,7 +402,7 @@ footer .fr {
 		width: 100px;
 		font-weight: bold;
 		text-transform: uppercase;
-		color: #232323;
+		color: #434343;
 		text-align: left;
 		overflow: hidden;
 	}
@@ -376,12 +452,13 @@ footer .fr {
 		margin-bottom: 30px;
 	}
 	footer {
-		font-size: 12px;
+		font-size: 14px;
 	}
 	footer .fl {
 		width: 100%;
 		text-align: center;
 		min-width: 100%;
+		padding-left: 0px;
 	}
 	footer .fl img {
 		display: block;
@@ -396,9 +473,10 @@ footer .fr {
 		text-align: center;
 		min-height: 35px;
 		min-width: 100%;
+		padding-right: 0px;
 	}
 	.socials {
-		margin-top: -182px;
+		margin-top: -181px;
 	}
 	.socials span a img {
 		width: 16px;
