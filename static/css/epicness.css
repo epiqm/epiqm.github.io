@@ -308,13 +308,16 @@ header div.heading h1 {
 .trght .card {
 	width: 245px;
 	float: left;
-	border: 1px solid #232323;
+	border: 1px solid #fff;
 	overflow: hidden;
 	border-radius: 6px;
 	text-align: left;
 	padding: 5px 10px;
 	box-sizing: border-box;
 	height: 220px;
+	box-shadow: 0px 1px 6px rgba(0,0,0,.05);
+	margin-top: 2px;
+	margin-bottom: 15px;
 }
 .trght .card:first-child {
 	margin-right: 15px;
@@ -325,13 +328,21 @@ header div.heading h1 {
 .trght .card .card-description p:first-child {
 	margin-bottom: 2px;
 	padding-bottom: 2px;
+	font-size: 1.1em;
+	margin-top: 10px;
 }
 .trght .card .card-description > div {
 	margin-bottom: 10px;
 	padding-bottom: 10px;
+	text-transform: lowercase;
+	color: #bababa;
+	font-size: .85em;
 }
 .trght .card .card-description p:nth-child(3) {
 	height: 100px;
+}
+.trght .card .card-links {
+	margin-bottom: 15px;
 }
 
 footer:before {
@@ -414,6 +425,14 @@ footer .fr {
 	}
 	.socials {
 		margin-top: -250px;
+	}
+	.trght .card {
+		width: 100%;
+		height: auto;
+	}
+	.trght .card .card-description p:nth-child(3) {
+		height: auto;
+		min-height: 70px;
 	}
 }
 
