@@ -177,6 +177,7 @@ a.link:hover {
 }
 a:hover {
 	color: #D26B9E;
+	cursor: pointer;
 }
 .card-links a {
 	text-decoration: none;
@@ -245,6 +246,7 @@ header div.heading h1 {
 	color: rgba(0,0,0,.75);
 	border-radius: 4px;
 	font-family: "Open Sans", sans-serif;
+	display: none;
 }
 .tooltip div {
 	padding: 4px 12px;
@@ -280,7 +282,7 @@ header div.heading h1 {
 .section .side h2 {
 	font-size: 1.15em;
 	width: 200px;
-	margin-left: 0px;
+	margin-left: 5px;
 	font-weight: bolder;
 	text-transform: uppercase;
 	color: #434343;
@@ -363,22 +365,23 @@ header div.heading h1 {
 }
 
 .trght {
-	overflow: hidden;
 	padding: 0;
 	margin: 0 10px 20px 0;
+	min-height: 330px;
 }
 .trght .card {
-	width: 245px;
+	width: 260px;
 	float: right;
 	overflow: hidden;
 	text-align: left;
 	padding: 0px 0px;
 	box-sizing: border-box;
-	height: 240px;
+	height: 320px;
 	box-shadow: 0px 1px 6px rgba(0,0,0,.05);
 	margin-top: 2px;
 	margin-bottom: 5px;
-	background: #333333;
+	background: #fff;
+	border-radius: 6px;
 }
 .trght .card:first-child {
 	margin-left: 15px;
@@ -387,30 +390,29 @@ header div.heading h1 {
 	margin-right: 0;
 }
 .trght .card .card-description p:first-child {
-	margin-bottom: 2px;
+	margin-bottom: 1px;
 	padding-bottom: 2px;
-	font-size: 1em;
-	letter-spacing: .03em;
+	font-size: .89em;
+	letter-spacing: .02em;
 	margin-top: 10px;
-	color: #61CDF5;
+	color: #b04cbe;
 	text-transform: uppercase;
-	padding: 10px 20px 0px 20px;
-	font-family: 'Quicksand', sans-serif;
+	padding: 5px 20px 0px 20px;
+	font-family: 'Quicksand Medium', sans-serif;
 }
 .trght .card .card-description > div {
 	margin-bottom: 10px;
-	padding-bottom: 10px;
 	text-transform: lowercase;
-	color: #787878;
-	font-size: .85em;
-	border-bottom: 1px dotted #7a7a7a;
-	padding: 0px 20px 20px 20px;
+	color: #b0b0b0;
+	font-size: .78em;
+	border-bottom: 1px dotted #f0f0f0;
+	padding: 0px 20px 15px 20px;
 }
 .trght .card .card-description p:nth-child(3) {
 	height: 100px;
 	overflow: hidden;
-	padding: 10px 20px 0px 20px;
-	font-size: .85em;
+	padding: 5px 20px 0px 20px;
+	font-size: .82em;
 	color: #9a9a9a;
 }
 .trght .card .card-links {
@@ -423,6 +425,34 @@ header div.heading h1 {
 }
 .trght .card .card-links a:link, .trght .card .card-links a:visited {
 	color: #df7792;
+}
+.trght .card .card-links a:hover {
+	color: #ffffff;
+}
+.trght .card-pic {
+	width: 260px;
+	height: 118px;
+	background: #ffffff;
+	display: block;
+	overflow: hidden;
+	text-align: center;
+	overflow: hidden;
+}
+.trght .card-pic img {
+	-webkit-transition: all .3s ease-out 0s;
+	-moz-transition: all .3s ease-out 0s;
+	-ms-transition: all .3s ease-out 0s;
+	-o-transition: all .3s ease-out 0s;
+	transition: all .3s ease-out 0s;
+}
+.trght .card-pic:hover {
+	cursor: pointer;
+}
+.trght .card-pic:hover img {
+	visibility: visible;
+	-webkit-opacity: 0.20;
+	-moz-opacity: 0.20;
+	opacity: 0.20;
 }
 
 .secln:before {
@@ -488,7 +518,7 @@ footer .fr {
 	position: relative;
 	top: 17px;
 }
-.em{width:190px; height: 140px; display: block; text-align: center; position: relative; overflow: hidden; margin-top: -80px; z-index: 0;}
+.em{width:190px; height: 140px; display: block; text-align: center; position: relative; overflow: hidden; margin-top: -70px; z-index: 0;}
 .em-pic{top:0;left:0;}
 .em-pic,.katseye{display:inline-block}
 .em-pic{width:190px;height:210px;background:url(/static/img/epiqm.png); background-repeat: no-repeat; }
@@ -522,13 +552,21 @@ footer .fr {
 		margin-top: -250px;
 	}
 	.trght .card {
-		width: 100%;
-		height: auto;
 		padding-bottom: 20px;
 	}
 	.trght .card .card-description p:nth-child(3) {
 		height: auto;
 		min-height: 70px;
+	}
+}
+
+@media screen and (max-width: 617px) {
+	.trght .card {
+		width: 160px;
+		height: 380px;
+	}
+	.trght {
+		height: 400px;
 	}
 }
 
@@ -566,11 +604,24 @@ footer .fr {
 		box-sizing: border-box;
 	}
 	.section .trght {
-		padding: 10px 20px 20px 20px;
+		padding: 10px 20px 0px 20px;
 	}
 	.trght .card .card-description p:nth-child(3) {
-		height: auto;
-		margin-bottom: 20px;
+		margin-bottom: 10px;
+		overflow:hidden; 
+		text-overflow: ellipsis;
+		font-size: .7em;
+	}
+	.trght .card {
+		height: 180px;
+		width: 132px;
+		padding-bottom: 0px;
+		margin-bottom: 0px;
+	}
+	.trght {
+		height: 30px !important;
+		padding-bottom: 0px;
+		margin-bottom: 0px;
 	}
 	footer:before {
 		margin-bottom: 30px;
