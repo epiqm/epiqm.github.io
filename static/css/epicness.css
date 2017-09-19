@@ -454,6 +454,32 @@ header div.heading h1 {
 	-moz-opacity: 0.20;
 	opacity: 0.20;
 }
+.trght .card-pic .lnk {
+	position: relative;
+	overflow: hidden;
+	display: block;
+	margin: 0 auto;
+	width: 42px;
+	height: 42px;
+	margin-top: -42px;
+	padding: 0;
+	background: url(/static/img/link.svg);
+	background-size: 42px 42px;
+	border-radius: 4px;
+	opacity: 0;
+	top: 80px;
+	-webkit-transition: all .3s ease-out 0s;
+	-moz-transition: all .3s ease-out 0s;
+	-ms-transition: all .3s ease-out 0s;
+	-o-transition: all .3s ease-out 0s;
+	transition: all .3s ease-out 0s;
+}
+.trght .card-pic:hover .lnk {
+	visibility: visible;
+	-webkit-opacity: 1;
+	-moz-opacity: 1;
+	opacity: 1;
+}
 
 .secln:before {
 	content:' ';
@@ -558,6 +584,9 @@ footer .fr {
 		height: auto;
 		min-height: 70px;
 	}
+	.trght .card .card-pic {
+		width: 260px;
+	}
 }
 
 @media screen and (max-width: 617px) {
@@ -567,6 +596,9 @@ footer .fr {
 	}
 	.trght {
 		height: 400px;
+	}
+	.trght .card .card-pic {
+		width: 160px;
 	}
 }
 
@@ -617,6 +649,9 @@ footer .fr {
 		width: 132px;
 		padding-bottom: 0px;
 		margin-bottom: 0px;
+	}
+	.trght .card .card-pic {
+		width: 130px;
 	}
 	.trght {
 		height: 30px !important;
