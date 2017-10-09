@@ -293,11 +293,11 @@ header div.heading h1 {
 	width: 570px;
 	float: left;
 	color: #808387;
-	padding: 0px 30px 20px 30px;
+	padding: 0px 30px 0px 30px;
 	box-sizing: border-box;
 	font-family: 'Quicksand', 'Open Sans', sans-serif;
 	font-weight: normal;
-	margin: 0 0 30px 0;
+	margin: 0 0 0px 0;
 }
 .section .topic p {
 	padding-bottom: 10px;
@@ -501,7 +501,7 @@ header div.heading h1 {
 	overflow: hidden;
 	display: block;
 	box-sizing: content-box;
-	margin-bottom: 30px;
+	margin-bottom: 40px;
 	padding: 1px 1px 1px 1px;
 }
 
@@ -621,12 +621,13 @@ footer .fr {
 		margin-bottom: 30px;
 	}
 	header div.heading {
-		padding: 75px 20px 25px 20px;
+		padding: 25px 20px 25px 20px;
 	}
 	header div.heading h1 {
-		font-size: 28px;
-		line-height: 34px;
+		font-size: 32px;
+		line-height: 38px;
 		font-weight: lighter;
+		overflow: hidden;
 	}
 	.section .side {
 		width: 100%;
@@ -636,6 +637,7 @@ footer .fr {
 	}
 	.tooltip {
 		font-size: 12px;
+		visibility: hidden;
 	}
 	.section .side h2 {
 		font-size: 16px;
@@ -715,7 +717,7 @@ footer .fr {
 		display: none;
 	}
 	.socials {
-		margin-top: -181px;
+		display: none;
 	}
 	.socials span a img {
 		width: 16px;
