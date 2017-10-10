@@ -296,7 +296,7 @@ header div.heading h1 {
 	padding: 0px 30px 0px 30px;
 	box-sizing: border-box;
 	font-family: 'Quicksand', 'Open Sans', sans-serif;
-	font-weight: normal;
+	font-weight: 400;
 	margin: 0 0 0px 0;
 }
 .section .topic p {
@@ -389,11 +389,23 @@ header div.heading h1 {
 	padding: 0px 0px;
 	box-sizing: border-box;
 	height: 320px;
-	box-shadow: 0px 1px 6px rgba(0,0,0,.05);
-	margin-top: 2px;
+	box-shadow: 0px 1px 3px rgba(0,0,0,.05);
+	margin-top: 3px;
 	margin-bottom: 5px;
 	background: #fff;
-	border-radius: 6px;
+	border-radius: 3px;
+	-webkit-transition: all .3s ease-out .2s;
+	-moz-transition: all .3s ease-out .2s;
+	-ms-transition: all .3s ease-out .2s;
+	-o-transition: all .3s ease-out .2s;
+	transition: all .3s ease-out .2s;
+}
+.trght .card img {
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+}
+.trght .card:hover {
+	box-shadow: 0px 1px 6px rgba(0,0,0,.05);
 }
 .trght .card:first-child {
 	margin-left: 15px;
@@ -451,20 +463,26 @@ header div.heading h1 {
 	overflow: hidden;
 }
 .trght .card-pic img {
-	-webkit-transition: all .3s ease-out 0s;
-	-moz-transition: all .3s ease-out 0s;
-	-ms-transition: all .3s ease-out 0s;
-	-o-transition: all .3s ease-out 0s;
-	transition: all .3s ease-out 0s;
+
 }
-.trght .card-pic:hover {
+.trght .card-pic {
+	background: rgb(0,0,0);
+}
+.trght .card-pic img:hover {
 	cursor: pointer;
+	background: rgba(0,0,0,.99);
+	-webkit-transition: all .3s ease-out .1s;
+	-moz-transition: all .3s ease-out .1s;
+	-ms-transition: all .3s ease-out .1s;
+	-o-transition: all .3s ease-out .1s;
+	transition: all .3s ease-out .1s;
 }
 .trght .card-pic:hover img {
 	visibility: visible;
-	-webkit-opacity: 0.20;
-	-moz-opacity: 0.20;
-	opacity: 0.20;
+	-webkit-opacity: 0.3;
+	-moz-opacity: 0.3;
+	opacity: 0.3;
+	background: rgba(0,0,0,.99);
 }
 .trght .card-pic .lnk {
 	position: relative;
@@ -480,11 +498,12 @@ header div.heading h1 {
 	border-radius: 4px;
 	opacity: 0;
 	top: 80px;
-	-webkit-transition: all .3s ease-out 0s;
-	-moz-transition: all .3s ease-out 0s;
-	-ms-transition: all .3s ease-out 0s;
-	-o-transition: all .3s ease-out 0s;
-	transition: all .3s ease-out 0s;
+}
+.trght .card-pic:hover .lnk {
+	visibility: visible;
+	-webkit-opacity: 0;
+	-moz-opacity: 0;
+	opacity: 0;
 }
 .trght .card-pic:hover .lnk {
 	visibility: visible;
