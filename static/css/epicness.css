@@ -386,7 +386,7 @@ header div.heading h1 {
 	float: right;
 	overflow: hidden;
 	text-align: left;
-	padding: 0px 0px;
+	padding: 0px 5px;
 	box-sizing: border-box;
 	height: 320px;
 	box-shadow: 0px 1px 3px rgba(0,0,0,.05);
@@ -413,16 +413,21 @@ header div.heading h1 {
 .trght .card:nth-child(2) {
 	margin-right: 0;
 }
-.trght .card .card-description p:first-child {
+a.project-name:link, a.project-name:visited {
+	text-decoration: none;
+	display: block;
+}
+.trght .card .card-description a.project-name {
 	margin-bottom: 1px;
 	padding-bottom: 2px;
-	font-size: .89em;
+	font-size: .9em;
 	letter-spacing: .02em;
 	margin-top: 10px;
 	color: #b04cbe;
 	text-transform: uppercase;
-	padding: 5px 20px 0px 20px;
-	font-family: 'Quicksand Medium', sans-serif;
+	padding: 5px 20px 4px 20px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
 }
 .trght .card .card-description > div {
 	margin-bottom: 10px;
