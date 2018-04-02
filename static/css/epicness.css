@@ -394,13 +394,12 @@ header div.heading h1 {
 	float: right;
 	overflow: hidden;
 	text-align: left;
-	padding: 0px 5px;
-	box-sizing: border-box;
+	padding: 0px 0px;
+	box-sizing: content-box;
 	height: 320px;
 	box-shadow: 0px 1px 3px rgba(0,0,0,.05);
 	margin-top: 3px;
 	margin-bottom: 5px;
-	background: #fff;
 	border-radius: 3px;
 	-webkit-transition: all .3s ease-out .2s;
 	-moz-transition: all .3s ease-out .2s;
@@ -408,13 +407,16 @@ header div.heading h1 {
 	-o-transition: all .3s ease-out .2s;
 	transition: all .3s ease-out .2s;
 }
-.trght .card img {
+.trght .card, .trght .card img {
 	border-top-left-radius: 3px;
 	border-top-right-radius: 3px;
 }
 .trght .card:hover {
 	box-shadow: 0px 1px 6px rgba(0,0,0,.05);
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
 }
+
 .trght .card:first-child {
 	margin-left: 15px;
 }
@@ -431,7 +433,7 @@ a.project-name:link, a.project-name:visited {
 	font-size: .9em;
 	letter-spacing: .02em;
 	margin-top: 10px;
-	color: #b04cbe;
+	color: #414141;
 	text-transform: uppercase;
 	padding: 5px 20px 4px 20px;
 	font-family: 'Roboto', sans-serif;
@@ -467,11 +469,9 @@ a.project-name:link, a.project-name:visited {
 	color: #ffffff;
 }
 .trght .card-pic {
-	width: 260px;
+	width: 100%;
 	height: 118px;
-	background: #ffffff;
 	display: block;
-	overflow: hidden;
 	text-align: center;
 	overflow: hidden;
 }
@@ -479,11 +479,11 @@ a.project-name:link, a.project-name:visited {
 
 }
 .trght .card-pic {
-	background: rgb(0,0,0);
+	background: #000;
 }
 .trght .card-pic img:hover {
 	cursor: pointer;
-	background: rgba(0,0,0,.99);
+	background: rgb(0,0,0);
 	-webkit-transition: all .3s ease-out .1s;
 	-moz-transition: all .3s ease-out .1s;
 	-ms-transition: all .3s ease-out .1s;
@@ -495,7 +495,7 @@ a.project-name:link, a.project-name:visited {
 	-webkit-opacity: 0.3;
 	-moz-opacity: 0.3;
 	opacity: 0.3;
-	background: rgba(0,0,0,.99);
+	background: rgb(0,0,0);
 }
 .trght .card-pic .lnk {
 	position: relative;
