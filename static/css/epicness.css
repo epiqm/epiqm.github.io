@@ -361,6 +361,11 @@ header div.heading h1 {
 .app-icon img {
 	border-radius: 4px;
 }
+.app-icon_ {
+	border: 1px dashed #d0d0d0;
+	box-sizing: content-box;
+	border-radius: 4px;
+}
 .app-icon_supaplex {
 	background: url(/static/img/supaplex.gif);
 	width: 62px;
@@ -382,6 +387,10 @@ header div.heading h1 {
 }
 .app:last-child {
 	margin-bottom: 0px;
+}
+.app-description p {
+	min-height: 30px;
+	max-height: 50px;
 }
 
 .trght {
