@@ -480,6 +480,8 @@ a.project-name:link, a.project-name:visited {
 }
 .trght .card-pic {
 	background: #000;
+	border-top-left-radius: 3px !important;
+	border-top-right-radius: 3px !important;
 }
 .trght .card-pic img:hover {
 	cursor: pointer;
