@@ -1,8 +1,3 @@
-# epicmaxim
-Recreation of 2008's website web design with use of new frontend technologies.
+# Maxim
 
-## Set of technologies
-	* HTML5 for markup
-	* CSS3 for styling
-	* SVG for resizeable images
-
+A public website with projects and other things that I have created.
