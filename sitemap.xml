@@ -4,19 +4,14 @@
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
-
 <url>
-  <loc>https://maxim.today/</loc>
-  <lastmod>2018-03-25T00:09:15+00:00</lastmod>
+  <loc>https://epiqm.github.io/</loc>
+  <lastmod>2021-09-20T00:09:15+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://maxim.today/supaplex/</loc>
+  <loc>https://epiqm.github.io/supaplex/</loc>
   <lastmod>2018-03-25T00:09:15+00:00</lastmod>
   <priority>0.80</priority>
 </url>
-
-
 </urlset>
